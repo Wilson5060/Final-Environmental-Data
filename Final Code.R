@@ -459,7 +459,7 @@ california_model_glm <- glm(
   Wildfire_Storm_Count ~ Smoke_Days + Avg_Temperature + Total_Precipitation,
   data = california_combined_data,
   family = poisson)
-summary(rnia_model_glm)
+summary(california_model_glm)
 
 # 4. Visualize Poisson GLM Predictions
 california_combined_data$Predicted_Count <- predict(california_model_glm)
